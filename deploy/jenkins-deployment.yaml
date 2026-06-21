@@ -24,10 +24,10 @@ spec:
           limits:
             memory: "2Gi"
             cpu: "1000m"
-        volumeMounts:
-        - name: jenkins-data
-          mountPath: /var/jenkins_home
-      volumes:
-      - name: jenkins-data
-        persistentVolumeClaim:
-          claimName: jenkins-pvc
+      #   volumeMounts:
+      #   - name: jenkins-data
+      #     mountPath: /var/jenkins_home
+      # volumes:
+      # - name: jenkins-data
+      #   persistentVolumeClaim:
+      #     claimName: jenkins-pvc
