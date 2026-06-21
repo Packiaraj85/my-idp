@@ -1,0 +1,12 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: idp-nfs
+provisioner: idp.com/external-nfs
+parameters:
+  server: vdc.idp.local
+  path: /devops
+  readOnly: "false"
+allowVolumeExpansion: true
+volumeBindingMode: Immediate
+reclaimPolicy: Delete
