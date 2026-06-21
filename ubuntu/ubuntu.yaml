@@ -26,20 +26,20 @@ spec:
           limits:
             memory: "1024Mi"
             cpu: "500m"
-        volumeMounts:
-          - name: ubuntu-home
-            mountPath: /home/packiarajd
-          - name: ubuntu-data
-            mountPath: /mnt/data
-      volumes:
-        - name: ubuntu-home
-          nfs:
-            server: vdc.idp.local
-            path: /devops/home/packiarajd
-        - name: ubuntu-data
-          nfs:
-            server: vdc.idp.local
-            path: /devops/data
+      #   volumeMounts:
+      #     - name: ubuntu-home
+      #       mountPath: /home/packiarajd
+      #     - name: ubuntu-data
+      #       mountPath: /mnt/data
+      # volumes:
+      #   - name: ubuntu-home
+      #     nfs:
+      #       server: vdc.idp.local
+      #       path: /devops/home/packiarajd
+      #   - name: ubuntu-data
+      #     nfs:
+      #       server: vdc.idp.local
+      #       path: /devops/data
 ---
 apiVersion: v1
 kind: Service
