@@ -5,7 +5,7 @@ metadata:
 provisioner: idp.com/external-nfs
 parameters:
   server: vdc.idp.local
-  path: /devops/jenkins/jenkins-home
+  path: /devops/jenkins/jenkins_home
   readOnly: "false"
 allowVolumeExpansion: true
 volumeBindingMode: Immediate
