@@ -2,7 +2,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: idp-nfs
-provisioner: local.com/external-nfs
+provisioner: idp.local/external-nfs
 parameters:
   server: vdc.idp.local
   path: /devops
