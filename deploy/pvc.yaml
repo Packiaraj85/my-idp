@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: jenkins-pvc
+  labels:
+    app: jenkins
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: idp-nfs
+  resources:
+    requests:
+      storage: 4Gi
