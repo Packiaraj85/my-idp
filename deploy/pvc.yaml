@@ -7,7 +7,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: idp-nfs
+  storageClassName: manual
   resources:
     requests:
       storage: 20Gi
