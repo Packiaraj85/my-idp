@@ -14,5 +14,5 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /devops/jenkins_home
+    path: /devops/jenkins
     server: vdc.idp.local
